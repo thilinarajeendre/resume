@@ -4,377 +4,319 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Thilina Rajeendre K. — Materials Scientist</title>
-  <meta name="description" content="Thilina Rajeendre — Materials Scientist, Science Communicator. CV and contact."/>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+  <meta name="description" content="Thilina Rajeendre — Materials Scientist, Researcher, and Science Communicator."/>
   <style>
-    /* Reset + simple utilities */
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#94a3b8;
-      --accent:#7dd3fc;
-      --glass: rgba(255,255,255,0.03);
-      --glass-2: rgba(255,255,255,0.02);
-      --maxw:1100px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      background: linear-gradient(180deg,#071021 0%, #061327 60%);
-      color:#e6eef8;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-      padding:32px;
-      display:flex;
-      justify-content:center;
-      align-items:flex-start;
-      font-size:16px;
+    :root {
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --light: #f9fafb;
+      --radius: 12px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     }
 
-    .container{
-      width:100%;
-      max-width:var(--maxw);
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:14px;
-      padding:28px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.7);
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255,255,255,0.03);
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+      font-size: 16px;
+      line-height: 1.6;
     }
 
-    header{
-      display:flex;
-      gap:20px;
-      align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
     }
 
-    .profile{
-      display:flex;
-      gap:18px;
-      align-items:center;
-    }
-    .avatar{
-      width:86px;
-      height:86px;
-      border-radius:12px;
-      background:linear-gradient(135deg,var(--accent),#60a5fa);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:700;
-      font-size:28px;
-      color:#022;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.6);
-    }
-    .name{
-      display:flex;
-      flex-direction:column;
-    }
-    .name h1{
-      margin:0;
-      font-size:20px;
-      letter-spacing:0.2px;
-    }
-    .name p{
-      margin:4px 0 0 0;
-      color:var(--muted);
-      font-size:14px;
+    .card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
     }
 
-    .actions{
-      display:flex;
-      gap:10px;
-      align-items:center;
-    }
-    .btn{
-      display:inline-flex;
-      gap:10px;
-      align-items:center;
-      padding:10px 14px;
-      border-radius:10px;
-      background:var(--glass);
-      border:1px solid rgba(255,255,255,0.04);
-      color:inherit;
-      cursor:pointer;
-      text-decoration:none;
-      font-weight:600;
-      transition:transform .12s ease, box-shadow .12s ease;
-    }
-    .btn:hover{ transform:translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.5) }
-    .primary{ background: linear-gradient(90deg,var(--accent), #60a5fa); color:#022; border:none; }
-    .download{ background:transparent; border:1px solid rgba(255,255,255,0.06) }
-
-    main{
-      display:grid;
-      grid-template-columns: 1fr 340px;
-      gap:22px;
-      margin-top:22px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
     }
 
-    /* left column (CV content) */
-    .card{
-      background:var(--card);
-      border-radius:12px;
-      padding:18px;
-      border: 1px solid rgba(255,255,255,0.02);
-    }
-    section h2{
-      margin:0 0 10px 0;
-      font-size:16px;
-    }
-    .meta{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      color:var(--muted);
-      font-size:14px;
-      margin-top:6px;
-    }
-    .two-col{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:12px;
-    }
-    ul{ margin:8px 0 12px 18px }
-    li{ margin-bottom:6px }
+    h1 { margin: 0; font-size: 1.8rem; }
+    h2 { font-size: 1.2rem; margin: 24px 0 12px; }
+    h3 { font-size: 1rem; margin: 12px 0 6px; }
 
-    /* right column (sidebar) */
-    aside .card{ position:sticky; top:28px }
-    .contact-block p{ margin:6px 0; color:var(--muted) }
-    .skill-pill{
-      display:inline-block;
-      padding:6px 8px;
-      border-radius:999px;
-      background:var(--glass-2);
-      margin:6px 6px 6px 0;
-      font-size:13px;
-      color:var(--muted);
+    p { margin: 4px 0 10px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    ul { margin: 6px 0 6px 22px; color: var(--muted); }
+
+    .btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .btn:hover { background: #1d4ed8; }
+
+    .small-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 10px;
+      cursor: pointer;
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-left: 8px;
     }
 
-    /* publications: compact list with small links */
-    .pub{ margin-bottom:10px; font-size:14px }
-    .pub a{ color:var(--accent); text-decoration:none; font-weight:600 }
-
-    footer{ margin-top:20px; color:var(--muted); font-size:13px; text-align:center }
-
-    /* mobile */
-    @media (max-width:900px){
-      body{ padding:18px }
-      main{ grid-template-columns: 1fr; }
-      aside .card{ position:relative; top:auto; }
-      .avatar{ width:72px; height:72px; font-size:24px }
+    .masked {
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 1px;
     }
 
-    /* small utilities */
-    .muted{ color:var(--muted); font-size:13px }
-    .inline-link{ color:var(--accent); text-decoration:none; font-weight:600 }
-    .divider{ height:1px; background:rgba(255,255,255,0.02); margin:12px 0; border-radius:2px }
-    .tagline{ color:var(--muted); font-size:14px; margin-top:6px }
+    .contact-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 24px;
+      grid-column: 1 / span 2;
+    }
+
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
-  <div class="container" role="main">
-    <header>
-      <div class="profile" aria-label="profile">
-        <div class="avatar" aria-hidden="true">TR</div>
-        <div class="name">
+  <div class="container">
+    <!-- LEFT CARD -->
+    <div class="card">
+      <header>
+        <div>
           <h1>Thilina Rajeendre K.</h1>
-          <p>Materials Scientist | Science Communicator | Porous Materials | AI & ML</p>
-          <div class="meta">
-            <span>Nationality: Sri Lankan</span>
-            <span>•</span>
-            <span>Phone: +94 789 616 280</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="actions" role="region" aria-label="actions">
-        <!-- Update this PDF path if you store it differently in your repo -->
-        <a class="btn download" id="downloadCv" href="assets/Thilina_Rajeendre_CV.pdf" target="_blank" rel="noopener" title="Download CV (PDF)">
-          ⬇ Download CV
-        </a>
-
-        <a class="btn primary" id="contactBtn" href="mailto:thilina.rajeendre@gmail.com?subject=Contact%20from%20website" title="Contact Thilina">
-          ✉ Contact
-        </a>
-      </div>
-    </header>
-
-    <main>
-      <!-- Left: rich CV content -->
-      <div class="card" aria-label="curriculum vitae">
-        <section>
-          <h2>About</h2>
-          <p class="tagline">Materials Scientist focused on porous materials (MOFs), heterogeneous catalysis, and AI-assisted synthesis. PhD (2020–2025) — SIIT, Thammasat University.</p>
-        </section>
-
-        <div class="divider" role="separator"></div>
-
-        <section>
-          <h2>Education</h2>
-
-          <div class="two-col">
-            <div>
-              <strong>PhD — Engineering & Technology</strong><br>
-              SIIT, Thammasat University, Thailand (2020–2025)<br>
-              <span class="muted">Dissertation — Heterometallic Metal-Organic Frameworks in Heterogeneous Catalysis</span>
-            </div>
-            <div>
-              <strong>MSc — Chemical Engineering</strong><br>
-              SIIT, Thammasat University (2018–2020)<br>
-              <span class="muted">GPA 4.0 — Thesis on MIL-53(Al) magnetic nanoparticles for antibiotic removal</span>
-            </div>
-
-            <div>
-              <strong>BSc — Biotechnology</strong><br>
-              University of Mysore, India (2012–2015)
-            </div>
-            <div></div>
-          </div>
-        </section>
-
-        <div class="divider"></div>
-
-        <section>
-          <h2>Professional Experience & Projects</h2>
-          <ul>
-            <li><strong>Brand Executive</strong> — Avon Pharmo Chem (Pvt) Ltd, Sri Lanka (2016–2017): marketing scientific equipment and technical solutions.</li>
-
-            <li><strong>Digital Projects</strong> — highlights:
-              <ul>
-                <li>Automated fluid handling device for COVID-19 diagnosis (US patent pending, Slip-Chip device).</li>
-                <li>Microwave-assisted flow reactor prototype — reduced synthesis time by ~30%.</li>
-                <li>IoT-enabled gas flow reactor and UV-Vis spectrum analyzer (Python + ML).</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <div class="divider"></div>
-
-        <section>
-          <h2>Teaching</h2>
-          <ul>
-            <li>Instructor — Undergraduate Physics Laboratory (SCS-186), SIIT (2022–2025): lab manuals, 3D-printed pumps, ESP IoT devices.</li>
-            <li>Instructor — Civic Engagement (TU-100) (Jan–Jun 2019): project-based learning & community projects.</li>
-            <li>TA — Chemical Engineering Laboratory (CHS 362) (Aug–Dec 2019): fermentation, HPLC, biosafety training.</li>
-          </ul>
-        </section>
-
-        <div class="divider"></div>
-
-        <section>
-          <h2>Publications (selected)</h2>
-          <div class="pub">
-            1. Katugampalage, T. R., Waribam, P., Opaprakasit, P., ... & Sreearunothai, P. (2024). Bimetallic Fe:Co MOF for Fenton-like catalytic degradation. <a class="inline-link" href="#" target="_blank" rel="noopener">Chemical Engineering Journal</a>
-          </div>
-          <div class="pub">
-            2. Katugampalage, T. R., Waribam, P. ... (2024). Facile synthesis of Fe:Co Bimetallic MOF for CO₂ capture. <span class="muted">Trends in Sciences (Accepted)</span>
-          </div>
-          <div class="pub">
-            3. Waribam, P., Katugampalage, T. R., ... (2025). Magnetic MOFs from waste. <a class="inline-link" href="#" target="_blank" rel="noopener">ACS Sustainable Chem. & Eng.</a>
-          </div>
-          <p class="muted">Full list of publications is in the PDF CV.</p>
-        </section>
-
-        <div class="divider"></div>
-
-        <section>
-          <h2>Awards & Scholarships</h2>
-          <ul>
-            <li>Best Young Scientist Oral Presentation — iCRS 2024</li>
-            <li>Best oral presentation — MRS Thailand 2019</li>
-            <li>Multiple full scholarships (ICCR, EFS, TU-NSTDA)</li>
-          </ul>
-        </section>
-      </div>
-
-      <!-- Right: sidebar -->
-      <aside>
-        <div class="card contact-block" aria-label="contact and quick info">
-          <h2>Contact</h2>
-          <p><strong>Email</strong><br><a class="inline-link" id="emailLink" href="mailto:thilina.rajeendre@gmail.com">thilina.rajeendre@gmail.com</a></p>
-          <p><strong>Phone</strong><br>+94 789 616 280</p>
-
-          <div style="height:10px"></div>
-
-          <button class="btn primary" id="copyEmailBtn" title="Copy email to clipboard">Copy email</button>
-          <button class="btn" id="openMailClient" style="min-width:120px">Open mail client</button>
-
-          <div class="divider"></div>
-
-          <h2>Skills</h2>
-          <div>
-            <span class="skill-pill">Lab Instruction</span>
-            <span class="skill-pill">Hydrothermal Synthesis</span>
-            <span class="skill-pill">MOFs / Porous Materials</span>
-            <span class="skill-pill">XRD / TEM / TGA</span>
-            <span class="skill-pill">IoT & Microcontrollers</span>
-            <span class="skill-pill">Python / ML</span>
-            <span class="skill-pill">Scientific Writing</span>
-          </div>
-
-          <div class="divider"></div>
-
-          <h2>Links</h2>
-          <p class="muted">
-            <a class="inline-link" href="https://scholar.google.com/citations?user=aRwgvzEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a><br>
-            <a class="inline-link" href="https://www.linkedin.com/in/thilinarajeendre/" target="_blank" rel="noopener">LinkedIn</a>
+          <p>Materials Scientist | Researcher | Science Communicator</p>
+          <p style="color: var(--muted); font-size: 0.9rem;">
+            Email:
+            <a href="mailto:thilina.rajeendre@gmail.com">thilina.rajeendre@gmail.com</a>
+            <!-- Phone will be revealed by user action (see script) -->
           </p>
-
         </div>
-      </aside>
-    </main>
+        <div>
+          <a class="btn" href="Thilina_Rajeendre_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn" href="mailto:thilina.rajeendre@gmail.com?subject=Contact%20from%20Website">Contact Me</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>About</h2>
+        <p>Materials Scientist focused on porous materials (MOFs), heterogeneous catalysis, and AI-assisted synthesis. PhD (2020–2025) — SIIT, Thammasat University.</p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>PhD — Engineering & Technology</strong><br>
+            SIIT, Thammasat University, Thailand (2020–2025)<br>
+            <span style="color:var(--muted)">Dissertation — Heterometallic Metal-Organic Frameworks in Heterogeneous Catalysis</span>
+          </li>
+          <li><strong>MSc — Chemical Engineering</strong><br>
+            SIIT, Thammasat University (2018–2020)<br>
+            <span style="color:var(--muted)">GPA 4.0 — Thesis on MIL-53(Al) magnetic nanoparticles for antibiotic removal</span>
+          </li>
+          <li><strong>BSc — Biotechnology</strong><br>
+            University of Mysore, India (2012–2015)
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Professional Experience & Projects</h2>
+        <ul>
+          <li><strong>Brand Executive</strong> — Avon Pharmo Chem (Pvt) Ltd, Sri Lanka (2016–2017): Marketing scientific equipment and technical solutions.</li>
+          <li><strong>Digital Projects — Highlights:</strong>
+            <ul>
+              <li>Automated fluid handling device for COVID-19 diagnosis (US patent pending, Slip-Chip device).</li>
+              <li>Microwave-assisted flow reactor prototype — reduced synthesis time by ~30%.</li>
+              <li>IoT-enabled gas flow reactor and UV-Vis spectrum analyzer (Python + ML).</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Teaching</h2>
+        <ul>
+          <li><strong>Graduate Teaching Assistant</strong> — Undergraduate Physics Laboratory (SCS-186), SIIT (2022–2025): Developed lab manuals, 3D-printed pumps, and ESP IoT devices.</li>
+          <li><strong>Graduate Teaching Assistant</strong> — Civic Engagement (TU-100) (Jan–Jun 2019): Facilitated project-based learning and community projects.</li>
+          <li><strong>Graduate Teaching Assistant</strong> — Chemical Engineering Laboratory (CHS-362) (Aug–Dec 2019): Conducted sessions on fermentation, HPLC, and biosafety training.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Publications (Selected)</h2>
+        <ol>
+          <li>Katugampalage, T. R., Waribam, P., Opaprakasit, P., ... & Sreearunothai, P. (2024). <em>Bimetallic Fe:Co MOF for Fenton-like catalytic degradation.</em> <strong>Chemical Engineering Journal</strong>.</li>
+          <li>Katugampalage, T. R., Waribam, P. ... (2024). <em>Facile synthesis of Fe:Co Bimetallic MOF for CO₂ capture.</em> <strong>Trends in Sciences</strong> (Accepted).</li>
+          <li>Waribam, P., Katugampalage, T. R., ... (2025). <em>Magnetic MOFs from waste.</em> <strong>ACS Sustainable Chem. & Eng.</strong></li>
+        </ol>
+        <p style="color:var(--muted); font-size:0.9rem;">Full list of publications is in the PDF CV.</p>
+      </section>
+
+      <section>
+        <h2>Awards & Scholarships</h2>
+        <ul>
+          <li>Best Young Scientist Oral Presentation — iCRS 2024</li>
+          <li>Best Oral Presentation — MRS Thailand 2019</li>
+          <li>Multiple full scholarships (ICCR, EFS, TU-NSTDA)</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="card">
+      <section>
+        <h2>Contact</h2>
+
+        <!-- Phone display: initially masked. Will be revealed on user action. -->
+        <div class="contact-row" aria-live="polite">
+          <div id="phoneDisplay" class="masked" aria-hidden="false">+94 ••• ••• •••</div>
+
+          <!-- Buttons to reveal and copy phone. Accessible via keyboard. -->
+          <button id="revealPhoneBtn" class="small-btn" aria-pressed="false" aria-label="Reveal phone number">Reveal phone</button>
+          <button id="copyPhoneBtn" class="small-btn" style="display:none" aria-label="Copy phone number">Copy</button>
+        </div>
+
+        <p style="margin-top:12px;">
+          Email: <a href="mailto:thilina.rajeendre@gmail.com">thilina.rajeendre@gmail.com</a><br>
+          <span style="color:var(--muted); font-size:0.95rem;">Profiles:</span><br>
+          <a href="https://www.linkedin.com/in/thilinarajeendre/" target="_blank" rel="noopener">LinkedIn</a><br>
+          <a href="https://scholar.google.com/citations?user=aRwgvzEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </p>
+      </section>
+
+      <section class="skills-section" style="margin-top:16px">
+        <h2>Skills</h2>
+
+        <h3>Research & Laboratory Skills</h3>
+        <ul class="skill-list">
+          <li>Wet lab, formulation & experimental design</li>
+          <li>Hydrothermal / Microwave synthesis</li>
+          <li>Twin screw extrusion</li>
+          <li>IR, UV–Vis, X-ray crystallography</li>
+          <li>TGA, UTM polymer testing, electron microscopy</li>
+          <li>Design of experiments (JMP)</li>
+          <li>Cross-functional collaboration</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Digital & Technical Skills</h3>
+        <ul class="skill-list">
+          <li>Statistical modeling & optimization</li>
+          <li>Data visualization — Excel, Power BI</li>
+          <li>IoT & sensor data logging (serial comms)</li>
+          <li>Reactor design & prototyping</li>
+          <li>CAD — FreeCAD, Shapr3D</li>
+          <li>3D printing</li>
+          <li>Web design — WordPress, HTML</li>
+          <li>Python — Pandas, Matplotlib, OpenCV</li>
+        </ul>
+      </section>
+    </div>
 
     <footer>
-      <small>Generated from uploaded CV. Download the PDF for the full formatted CV.</small>
+      © 2025 Thilina Rajeendre — Materials Scientist | Built for GitHub Pages
     </footer>
   </div>
 
   <script>
-    // Accessibility & small interactive behaviors
     (function(){
-      const email = "thilina.rajeendre@gmail.com";
-      const copyBtn = document.getElementById('copyEmailBtn');
-      const openMail = document.getElementById('openMailClient');
-      const contactBtn = document.getElementById('contactBtn');
+      // Encoded phone number (base64). Stored only in JS so static HTML doesn't contain the actual digits.
+      // This value encodes the string "+94 789 616 280"
+      const encodedPhone = 'Kzk0IDc4OSA2MTYgMjgw';
 
-      copyBtn.addEventListener('click', async () => {
+      const phoneDisplay = document.getElementById('phoneDisplay');
+      const revealBtn = document.getElementById('revealPhoneBtn');
+      const copyBtn = document.getElementById('copyPhoneBtn');
+
+      // decode function
+      function decodePhone(encoded) {
         try {
-          await navigator.clipboard.writeText(email);
-          copyBtn.textContent = "Copied ✓";
-          setTimeout(()=> copyBtn.textContent = "Copy email", 1800);
+          return atob(encoded); // decode base64 to string
         } catch (e) {
-          copyBtn.textContent = "Copy failed";
+          return null;
         }
-      });
+      }
 
-      openMail.addEventListener('click', () => {
-        window.location.href = "mailto:" + encodeURIComponent(email) + "?subject=Contact%20from%20website";
-      });
+      function formatTelHref(normalized) {
+        // remove all non-digit characters, keep leading +
+        const cleaned = normalized.replace(/[^+\d]/g,'');
+        return 'tel:' + cleaned;
+      }
 
-      // Contact button shimmer feedback
-      contactBtn.addEventListener('click', ()=> {
-        // just let mailto open naturally
-      });
+      function revealPhone() {
+        const phone = decodePhone(encodedPhone); // e.g. "+94 789 616 280"
+        if (!phone) return;
+        phoneDisplay.textContent = phone;
+        // create a clickable tel link for convenience (browser will prompt dialing on phones)
+        const telHref = formatTelHref(phone);
+        const a = document.createElement('a');
+        a.href = telHref;
+        a.textContent = phone;
+        a.style.color = 'var(--accent)';
+        a.style.fontWeight = '600';
+        a.setAttribute('aria-label', 'Phone number link');
+        // replace current display with link
+        phoneDisplay.innerHTML = '';
+        phoneDisplay.appendChild(a);
 
-      // If the CV link 404s, try to provide basic warning in console.
-      const cvLink = document.getElementById('downloadCv');
-      fetch(cvLink.href, { method: 'HEAD' }).catch(()=> {
-        // don't spam user but log
-        console.info('If the download link is not found, place your PDF at ' + cvLink.href + ' in the repo.');
-      });
+        // show copy button
+        copyBtn.style.display = 'inline-block';
+        revealBtn.style.display = 'none';
+        revealBtn.setAttribute('aria-pressed','true');
+      }
 
-      // Keyboard shortcut: press "e" to copy email
+      function copyPhoneToClipboard() {
+        const phone = decodePhone(encodedPhone);
+        if (!phone) return;
+        navigator.clipboard.writeText(phone).then(() => {
+          copyBtn.textContent = 'Copied ✓';
+          setTimeout(()=> copyBtn.textContent = 'Copy', 1500);
+        }).catch(()=> {
+          copyBtn.textContent = 'Copy failed';
+          setTimeout(()=> copyBtn.textContent = 'Copy', 1500);
+        });
+      }
+
+      // Event listeners
+      revealBtn.addEventListener('click', revealPhone);
+      revealBtn.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); revealPhone(); }});
+      copyBtn.addEventListener('click', copyPhoneToClipboard);
+
+      // Accessibility: allow reveal with "p" keyboard shortcut when focus is in document (but won't run automatically)
       window.addEventListener('keydown', (ev) => {
-        if (ev.key === 'e' && (ev.ctrlKey || ev.metaKey) === false) {
-          ev.preventDefault();
-          copyBtn.click();
+        if (ev.key.toLowerCase() === 'p' && document.activeElement.tagName.toLowerCase() === 'body') {
+          revealPhone();
         }
       });
     })();
